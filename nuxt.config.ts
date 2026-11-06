@@ -43,13 +43,13 @@ export default defineNuxtConfig({
         // Permite cereri exclusiv către propriul API GraphQL
         'connect-src': [
           "'self'",
-          'https://api.byzbros.com'
+          'https://ronatural.com'
         ],
         // Permite imagini de pe serverul tău WordPress + data URIs (placeholder-e)
         'img-src': [
           "'self'",
           'data:',
-          'https://api.byzbros.com'
+          'https://ronatural.com'
         ],
         'object-src': ["'none'"],
         'base-uri': ["'self'"],
@@ -64,8 +64,8 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
-        { rel: 'preconnect', href: 'https://api.byzbros.com' },
-        { rel: 'dns-prefetch', href: 'https://api.byzbros.com' }
+        { rel: 'preconnect', href: 'https://ronatural.com' },
+        { rel: 'dns-prefetch', href: 'https://ronatural.com' }
       ]
     }
   },
@@ -91,14 +91,14 @@ export default defineNuxtConfig({
       xs: 320, sm: 640, md: 768, lg: 1024, xl: 1280, '2xl': 1536,
     },
     domains: [
-      'api.byzbros.com'
+      'ronatural.com'
     ],
   },
 
   apollo: {
     clients: {
       default: {
-        httpEndpoint: 'https://api.byzbros.com/graphql',
+        httpEndpoint: 'https://ronatural.com',
         persisted: true,
         connectToDevTools: process.env.NODE_ENV !== 'production',
       },
