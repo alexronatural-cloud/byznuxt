@@ -101,6 +101,10 @@ export default defineNuxtConfig({
         httpEndpoint: 'https://ronatural.com',
         persisted: true,
         connectToDevTools: process.env.NODE_ENV !== 'production',
+        // Aici activezi trimiterea cookie-urilor de sesiune pe CORS:
+        credentials: 'include',
+        // Opțional: trimite cookie-urile și din SSR
+        tokenStorage: 'cookie',
       },
     },
   },
